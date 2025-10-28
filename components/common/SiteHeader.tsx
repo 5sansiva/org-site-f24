@@ -120,7 +120,7 @@ export default function SiteHeader() {
                 <InstagramIcon className='h-6 text-ais-new-med-blue'/>
               </IconButton>
               <IconButton onClick={() => {window.open("/discord", "_blank")}}>
-                <img src="/images/Logos/bluediscord.png" className="h-5" />
+              <img src="/images/Logos/DiscordBlueIcon.svg" className="h-5 " />
               </IconButton>
               <IconButton onClick={() => {window.open("/linkedin", "_blank")}}>
                 <LinkedInIcon className='h-6 text-ais-new-med-blue'/>
