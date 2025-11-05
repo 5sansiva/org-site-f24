@@ -206,7 +206,7 @@ export default function OfficerItem({ officer }: OfficerItemProps) {
     <div
       className={
         directorAtt +
-        'h-80 w-64 transition duration-400 hover:shadow-lg hover:bg-ais-blue-gray rounded-xl  s'
+        'min-h-80 w-64 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:bg-ais-blue-gray rounded-xl s'
       }
     >
       {officerImg}
@@ -214,7 +214,7 @@ export default function OfficerItem({ officer }: OfficerItemProps) {
       <div className="">
         <div className="text-lg text-center font-light py-2">{title}</div>
       </div>
-      <div className="flex justify-center pt-1">
+      <div className="flex justify-center -mt-2 pb-3">
         {officerEmail}
         {officerGitHub}
         {officerLinkedIn}
