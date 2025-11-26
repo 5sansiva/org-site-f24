@@ -8,6 +8,7 @@ import PastEvent from '../components/homepage/PastEvent';
 import JoinUs from '../components/homepage/JoinUs';
 import Summary from '../components/homepage/Summary';
 import SplitContent from '../components/homepage/SplitContent';
+import AboutPage from './about';
 
 /**
  * The root page for the organization website.
@@ -59,12 +60,12 @@ export default function HomePage() {
           </div>
         </section>
         <section id="summary" className="relative w-full bg-ais-new-soft-black">
-          <Summary />
+          <AboutPage />
         </section>
-        <section id="past event" className="relative">
+        {/* <section id="past event" className="relative">
           <PastEvent />
-        </section>
-        <section id="split content" className="relative">
+        </section> */}
+        <section id="split content" className="relative mt-8">
           <SplitContent
             topImageSrc="/images/Photos/ml-mon.png"
             topBodyText="AIS usually hosts an ML Mondays workshop series about once a year where students have the opportunity to learn the basics of machine learning. Any student can attend these events absolutely free!"
