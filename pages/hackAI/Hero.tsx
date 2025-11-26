@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
 const images = [
-  '/images/placeholder.png',
-  '/images/Shapes/home_arrow.png',
-  '/images/tech-tank/mountains.png',
+  '/hackai/hackAIOpening.png',
+  '/hackai/hackAISponsors.png',
 ]
 
 const Hero = () => {
@@ -33,13 +32,13 @@ const Hero = () => {
         </header>
 
         <section className="mt-8 flex justify-center px-4">
-          <div className="relative w-full max-w-4xl h-72 sm:h-96 bg-white rounded-lg overflow-hidden shadow-md">
+          <div className="relative w-full max-w-5xl aspect-video bg-white rounded-lg overflow-hidden shadow-md">
             {images.map((src, i) => (
               <img
                 key={src + i}
                 src={src}
                 alt={`slide-${i}`}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 aspect-video ${
                   i === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}
                 draggable={false}

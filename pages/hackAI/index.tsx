@@ -1,11 +1,20 @@
-import React from 'react'
+import PastWinners from "./PastWinners";
+import Hero from "./Hero";
+import AboutSection from "./AboutUs";
+import SponsorsSlideshow from "./Sponsors";
 
-const index = () => {
+
+export default function HackAiHome() {
   return (
-    <div>
+    <div className="pt-[5rem]">
+      {/* Your other page content */}
       
-    </div>
-  )
-}
+      <Hero />
+      <AboutSection />
+      <PastWinners />
+      <SponsorsSlideshow />
 
-export default index
+      {/* More content */}
+    </div>
+  );
+}
