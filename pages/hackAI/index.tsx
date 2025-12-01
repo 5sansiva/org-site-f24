@@ -2,6 +2,7 @@ import PastWinners from "./PastWinners";
 import Hero from "./Hero";
 import AboutSection from "./AboutUs";
 import SponsorsSlideshow from "./Sponsors";
+import FAQSection from "./Faq";
 
 
 export default function HackAiHome() {
@@ -11,9 +12,9 @@ export default function HackAiHome() {
       
       <Hero />
       <AboutSection />
-      <PastWinners />
+      {/* <PastWinners /> */}
       <SponsorsSlideshow />
-
+      <FAQSection />
       {/* More content */}
     </div>
   );

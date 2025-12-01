@@ -2,11 +2,18 @@ import React from 'react';
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-gradient-to-r from-gray-700 to-gray-600 py-16 px-8">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-col gap-12 items-center">
+    <section 
+      // UPDATED GRADIENT: Changed via-60% to via-70% to push the darkening effect further down.
+      className="w-full bg-gradient-to-b from-white via-[#F5DEB3] via-70% to-[#364153] py-16 px-8"
+    >
+      <div 
+        // UPDATED SPACING: Added 'lg:gap-24' to increase space between text and image on large screens.
+        className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-center"
+      >
+        
         {/* Text Content */}
-        <div className="text-white">
-          <h2 className="text-5xl sm:text-6xl font-serif mb-8 text-center lg:text-left">
+        <div className="text-[#364153] text-center lg:text-left lg:w-1/2">
+          <h2 className="text-5xl sm:text-6xl font-serif mb-8">
             ABOUT
           </h2>
           <p className="text-xl sm:text-2xl leading-relaxed font-serif">
@@ -15,10 +22,10 @@ export default function AboutSection() {
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <div className="bg-white p-4 shadow-2xl rounded-lg">
+        <div className="relative w-full max-w-2xl lg:w-1/2">
+          <div className="bg-white shadow-2xl rounded-lg">
             <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800"
+              src="/hackai/hackOfficers.jpeg"
               alt="Hackathon presentation"
               className="w-full h-auto rounded"
             />

@@ -46,7 +46,7 @@ const PastWinners: React.FC = () => {
           {winners.map((winner) => (
             <div 
               key={winner.id}
-              className="bg-gray-300 rounded-lg p-6 shadow-md"
+              className="bg-gray-300 rounded-lg p-6 shadow-md hover:scale-105"
             >
               <div className="bg-white w-full aspect-video mb-4 rounded">
                 {winner.imageUrl && (

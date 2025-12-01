@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 const images = [
   '/hackai/hackAIOpening.png',
   '/hackai/hackAISponsors.png',
+  '/hackai/Presentation.png'
 ]
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
 
   useEffect(() => {
     if (!isPlaying) return
-    const t = setInterval(() => setIndex((i) => (i + 1) % images.length), 3500)
+    const t = setInterval(() => setIndex((i) => (i + 1) % images.length), 3000)
     return () => clearInterval(t)
   }, [isPlaying])
 
@@ -21,8 +22,8 @@ const Hero = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#F7EEDD] via-[#E3D7FF] to-[#C8B7FF] pb-8"
     >
-      <div className="max-w-6xl mx-auto px-4 pt-32">
-        <header className="pt-4">
+      <div className="max-w-6xl mx-auto px-4 pt-8">
+        <header className="pt-2">
           <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-placard-bold text-ais-new-med-blue">
             HackAI — Build the Future
           </h1>
@@ -31,14 +32,14 @@ const Hero = () => {
           </p>
         </header>
 
-        <section className="mt-8 flex justify-center px-4">
+        <section className="mt-8 flex justify-center ">
           <div className="relative w-full max-w-5xl aspect-video bg-white rounded-lg overflow-hidden shadow-md">
             {images.map((src, i) => (
               <img
                 key={src + i}
                 src={src}
                 alt={`slide-${i}`}
-                className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 aspect-video ${
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 aspect-video ${
                   i === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}
                 draggable={false}

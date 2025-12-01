@@ -36,14 +36,20 @@ export default function HomePage() {
               alt="Home string"
               className="absolute hidden md:block h-[40vw] w-[40vw] top-[calc(26rem-10vw)] lg:h-[calc(30vw)] lg:w-[calc(30vw)] lg:top-[calc(28rem-25vw)] xl:top-[calc(26rem-20vw)]"
             />
-            <div className="flex font-placard-bold text-ais-blue mb-8 justify-center text-5xl sm:text-8xl md:pl-[calc(15%-5rem)] lg:text-[7rem] lg:pl-[calc(50%-20rem)] lg:justify-start xl:text-9xl">
-                STEP INTO
-              <img src='/images/Shapes/home_arrow.png' alt="Step into arrow" className="mx-2 h-8 w-8" />
+            
+            {/* Line 1 */}
+            <div className="flex font-placard-bold text-ais-blue mb-8 justify-center text-5xl sm:text-8xl md:pl-[calc(15%-5rem)] lg:text-[7rem] lg:pl-[calc(50%-20rem)] lg:justify-start xl:text-9xl animate-[fadeInUp_0.8s_ease-out_0.2s_both]">
+              STEP INTO
+              
             </div>
-            <div className="font-placard-bold text-ais-blue mb-8 text-5xl sm:text-8xl md:pl-[calc(38%-9rem)] lg:text-[7rem] lg:pl-[calc(50%-14rem)] xl:text-9xl">
+            
+            {/* Line 2 */}
+            <div className="font-placard-bold text-ais-blue mb-8 text-5xl sm:text-8xl md:pl-[calc(38%-9rem)] lg:text-[7rem] lg:pl-[calc(50%-14rem)] xl:text-9xl animate-[fadeInUp_0.8s_ease-out_0.5s_both]">
               THE WORLD OF
             </div>
-            <div className="flex font-placard-bold text-5xl items-center flex-col sm:text-8xl md:pl-[calc(60%-10rem)] md:items-end lg:text-[7rem] lg:pl-[calc(50%-31rem)] lg:flex-row lg:items-center xl:text-9xl">
+            
+            {/* Line 3 */}
+            <div className="flex font-placard-bold text-5xl items-center flex-col sm:text-8xl md:pl-[calc(60%-10rem)] md:items-end lg:text-[7rem] lg:pl-[calc(50%-31rem)] lg:flex-row lg:items-center xl:text-9xl animate-[fadeInUp_0.8s_ease-out_0.8s_both]">
               <span className="bg-gradient-to-r from-[#361CFF] from-50% to-[#FFBC85] text-transparent bg-clip-text">
                 ARTIFICIAL
               </span>
@@ -52,6 +58,7 @@ export default function HomePage() {
                 INTELLIGENCE
               </span>
             </div>
+            
             <div className="absolute hidden">
               <button className="border border-ais-blue text-ais-blue bg-white px-12 py-1.5 rounded-xl text-lg">
                 Join Us
@@ -59,6 +66,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
         <section id="summary" className="relative w-full bg-ais-new-soft-black">
           <AboutPage />
         </section>
