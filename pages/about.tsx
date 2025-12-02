@@ -73,10 +73,12 @@ export const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className="font-placard tracking-wide text-[#361cff] text-black text-center font-bold uppercase text-5xl sm:text-8xl">
+      
+      {/* Our programs region */}
+      {/* <div className="font-placard tracking-wide text-[#361cff] text-black text-center font-bold uppercase text-5xl sm:text-8xl">
         Our Programs
       </div>
-      {/* Drop down boxes */}
+      
       <div className="w-full flex flex-col sm:flex-row justify-between gap-x-4 items-start pt-7 pb-5 px-4 max-w-[1400px] mx-auto">
         <div className="w-full sm:w-1/2 text-center">
           <CollapsibleItem
@@ -106,7 +108,7 @@ export const AboutPage = () => {
             sampleText="Learn about the role of AI in the real world straight from the companies leveraging it to innovate and push the boundaries of what's possible. Listen and network with company representatives and tap into rich industry insights."
           />
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
   );

@@ -4,7 +4,6 @@ interface Winner {
   id: number;
   projectName: string;
   year: string;
-  track: string;
   place: string;
   imageUrl?: string;
 }
@@ -14,24 +13,24 @@ const PastWinners: React.FC = () => {
   const winners: Winner[] = [
     {
       id: 1,
-      projectName: "Project Name",
-      year: "Year",
-      track: "Track",
-      place: "Place"
+      projectName: "Bifocal",
+      year: "2025",
+      place: "1st Place",
+      imageUrl: "/hackai/1st.jpg"
     },
     {
       id: 2,
-      projectName: "Project Name",
-      year: "Year",
-      track: "Track",
-      place: "Place"
+      projectName: "Smile",
+      year: "2025",
+      place: "2nd Place",
+      imageUrl: "/hackai/2nd.jpg"
     },
     {
       id: 3,
-      projectName: "Project Name",
-      year: "Year",
-      track: "Track",
-      place: "Place"
+      projectName: "Catch Up",
+      year: "2025",
+      place: "3rd Place",
+      imageUrl: "/hackai/3rd.jpg"
     }
   ];
 
@@ -46,7 +45,7 @@ const PastWinners: React.FC = () => {
           {winners.map((winner) => (
             <div 
               key={winner.id}
-              className="bg-gray-300 rounded-lg p-6 shadow-md"
+              className="bg-gray-300 rounded-lg p-6 shadow-md hover:scale-105"
             >
               <div className="bg-white w-full aspect-video mb-4 rounded">
                 {winner.imageUrl && (
@@ -63,7 +62,7 @@ const PastWinners: React.FC = () => {
                   {winner.projectName} – {winner.year}
                 </p>
                 <p className="text-black">
-                  {winner.track} – {winner.place}
+                   {winner.place}
                 </p>
               </div>
             </div>
