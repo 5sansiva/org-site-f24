@@ -3,6 +3,31 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      keyframes: {
+        'fade-slide-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0', visibility: 'hidden' }
+        }
+      },
+      animation: {
+        'fade-slide-up-1': 'fade-slide-up 0.8s ease-out 0.2s forwards',
+        'fade-slide-up-2': 'fade-slide-up 0.8s ease-out 0.5s forwards',
+        'fade-slide-up-3': 'fade-slide-up 0.8s ease-out 0.8s forwards',
+      },
       colors: {
         ais: {
           black: '#1F1E1E',
