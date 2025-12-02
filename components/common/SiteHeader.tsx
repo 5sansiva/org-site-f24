@@ -81,12 +81,12 @@ export default function SiteHeader() {
             <div onClick={() => headerButtonStyles('OurTeam')}>
               <NavButton handleItemClick={handleItemClick} link="/team" title="Our Team" active={buttonStyles.OurTeam}/>
             </div>  
-            <div onClick={() => headerButtonStyles('JoinUs')}>
-              <NavButton handleItemClick={handleItemClick} link="/join" title="Join Us" active={buttonStyles.JoinUs}/>
-            </div> 
             <div onClick={() => headerButtonStyles('Hack AI')}>
               <NavButton handleItemClick={handleItemClick} link="/hackAI" title="Hack AI" active={buttonStyles.AboutUs}/>
             </div>
+            <div onClick={() => headerButtonStyles('JoinUs')}>
+              <NavButton handleItemClick={handleItemClick} link="/join" title="Join Us" active={buttonStyles.JoinUs}/>
+            </div> 
           </div>
           <div className="flex md:hidden">
             <Button
@@ -108,9 +108,9 @@ export default function SiteHeader() {
               }}
             >
                 <MenuItem onClick={() => {handleItemClick('/events', 'Events')}}>Events</MenuItem>
-                <MenuItem onClick={() => {handleItemClick('/team', 'OurTeam')}}>Our Team</MenuItem>
-                <MenuItem onClick={() => {handleItemClick('/join', 'JoinUs')}}>Join Us</MenuItem>
+                <MenuItem onClick={() => {handleItemClick('/team', 'OurTeam')}}>Our Team</MenuItem>        
                 <MenuItem onClick={() => {handleItemClick('/hackAI', 'HackAI')}}>Hack AI</MenuItem>
+                <MenuItem onClick={() => {handleItemClick('/join', 'JoinUs')}}>Join Us</MenuItem>
             
             </Menu>
           </div>
