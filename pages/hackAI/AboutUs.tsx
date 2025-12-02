@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section 
       // UPDATED GRADIENT: Changed via-60% to via-70% to push the darkening effect further down.
-      className="w-full bg-gradient-to-b from-white via-[#F5DEB3] via-70% to-[#364153] py-16 px-8"
+      className="w-full bg-[#283039] py-16 px-8"
     >
       <div 
         // UPDATED SPACING: Added 'lg:gap-24' to increase space between text and image on large screens.
@@ -12,7 +12,7 @@ export default function AboutSection() {
       >
         
         {/* Text Content */}
-        <div className="text-[#364153] text-center lg:text-left lg:w-1/2">
+        <div className="text-white text-center lg:text-left lg:w-1/2">
           <h2 className="text-5xl sm:text-6xl font-serif mb-8">
             ABOUT
           </h2>
